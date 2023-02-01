@@ -1,0 +1,33 @@
+header{
+    
+    background-color: aqua;
+    font-size: xx-large;
+    text-align: center;
+    font-style: italic;
+}
+body{
+    background-image: url(https://blog.foto24.com/wp-content/uploads/2021/04/Panoramica_paisaje_con_agua.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav{
+    background-color: firebrick;
+}
+section{
+    background-color:rebeccapurple;
+}
+article{
+    background-color: tan;
+}
+aside{
+    background-color: hotpink;
+}
+footer{
+    background-color: peru;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}

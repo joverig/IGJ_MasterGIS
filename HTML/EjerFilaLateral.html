@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Filalateral.css">
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215</a>
+    <ol>
+
+  <li><a target="blank" href="https://www.esri.es/es-es/home">ESRI España</a></li>
+  <li><a target="blank" href="https://www.esri.es/es-es/cursos-y-master/masters-esri/mastergis-presencial">Master presencial</a></li>
+  <li><a target="blank" href="https://www.esri.es/es-es/cursos-y-master/masters-esri/mastergis-online">Master Online</a></li>
+  <li><a target="blank" href="https://www.esri.es/es-es/cursos-y-master/masters-esri/experto-gis">Experto en desarrollo GIS</a></li>
+</ol>
+</div>
+
+<h2>Ejercicio menu lateral</h2>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+</script>
+   
+</body>
+</html> 

@@ -3,13 +3,13 @@ body {
   }
   
   .sidenav {
-    height: 90%;
+    height: 100%;
     width: 0;
     position: fixed;
      top: 0;
     left: 0;
     background-color: rgb(18, 159, 3);
-    overflow-x: hidden;
+    overflow-x:hidden;
     transition: 1s;
     padding-top: 60px;
   }

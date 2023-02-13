@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Ejer Usuarios premmium</h1>
+    <h2>Saluda a los usuarios y reconoce quien es premium</h2>
+
+
+
+    <br>
+
+
+
+    <p id="myText2"></p>
+    <br>
+    <p id="myText3"></p>
+    <br>
+    <p id="myText4"></p>
+
+    <script>
+        function init(h) {
+
+            let p = document.createElement("p");
+            let pTexto = document.createTextNode(h.username);
+            p.appendChild(pTexto);
+
+            document.body.appendChild(p);
+
+        }
+
+
+
+        ArrayUsers = [{ username: "pedro", age: 23, premium: true },
+            { username: "maria", age: 43, premium: false },
+            { username: "juan", age: 53, premium: false },
+            { username: "antonio", age: 23, premium: false },
+            { username: "jose", age: 54, premium: true }]
+        ArrayUsers.map(init)
+     //  for (element of ArrayUsers){
+       // init("p",element.username)
+     //  }
+
+        
+
+    </script>
+
+</body>
+
+</html>

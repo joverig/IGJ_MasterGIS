@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1>Ejer TOPPINGS</h1>
+<h2>Cacula cuanto cuesta tu Helado </h2>
+
+
+<input type="checkbox" id="vehicle1" name="vehicle1" onclick="myFunction()">
+<label for="vehicle1"> oreo</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" onclick="myFunction()">
+<label for="vehicle2"> Kitkat</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" onclick="myFunction()">
+<label for="vehicle3"> Brownie</label><br>
+<input type="checkbox" id="vehicle4" name="vehicle4" onclick="myFunction()">
+<label for="vehicle2"> Lacasitos</label><br>
+
+<p>Click the button to change the value of the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="myText2">El precio de su helado es 1.9€</p>
+
+<script>
+function myFunction() {
+    let Precio = 1.90
+     let V1 = document.getElementById("vehicle1").checked
+     let V2 = document.getElementById("vehicle2").checked
+     let V3 = document.getElementById("vehicle3").checked
+     let V4 = document.getElementById("vehicle4").checked
+     if (V1 == true){
+        Precio = Precio + 1
+     }
+     if (V2 == true){
+        Precio = Precio + 1.50
+     }
+     if (V3 == true){
+        Precio = Precio + 0.75
+     }
+     if (V4 == true){
+        Precio = Precio + 0.9 + 0.01
+     }
+
+    document.getElementById("myText2").textContent = "El precio de su helado es " +Precio+ "€";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1>Ejer Pares_impares</h1>
+<h2>Separa en pares e impares los numeros de una lista aleatoria</h2>
+
+
+
+<br>
+
+<button onclick="myFunction()">Comenzar</button>
+
+<p id="myText2"></p>
+<br>
+<p id="myText3"></p>
+<br>
+<p id="myText4"></p>
+
+<script>
+function myFunction() {
+    arrayale=[];
+    for(let i = 1;i <50; i++){
+        arrayale.push(Math.round(Math.random()*1000));
+    }
+    
+
+   
+    document.getElementById("myText2").innerHTML = arrayale;
+     v2 = []
+     v3 = []
+    for (f of arrayale){
+        if(f%2 == 0){
+          v2.push(f);
+        }
+        else{
+            v3.push(f);
+        }
+    }
+
+     document.getElementById("myText3").innerHTML ="pares "+ v2;
+     document.getElementById("myText4").innerHTML = "Impares "+v3;
+
+       
+    
+    
+    
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Ejer Eventos impares</h1>
+    <h2>Reconoce si el numero metido es par o impar </h2>
+
+
+    <input type="text" id="vehicle1" name="input">
+    <label for="vehicle1"> Introduce tu numero</label><br>
+
+
+    <br>
+
+    <button id="button">Try it</button>
+
+    <p id="myText2"></p>
+    <br>
+    <p id="myText3"></p>
+
+    <script>
+        
+        document.getElementById("button").addEventListener("click", myFunction);
+        function myFunction() {
+
+            if ((document.getElementById("vehicle1").value) % 2 == 0) {
+                document.getElementById("myText2").textContent = "El numero es par";
+
+            }
+            else {
+
+                document.getElementById("myText2").textContent = "El numero es impar";
+            }
+
+        }
+        var input = document.getElementsByTagName('input')[0];
+        console.log(input)
+        input.addEventListener("keypress", mostrarLetra);
+        console.log(input.addEventListener('keyup', mostrarLetra))
+        function mostrarLetra(evento) {
+            // evento es la forma de referenciar al objeto que se crea al presionar una tecla, podemos acceder a sus propiedades y condicionar solamente a ciertas letras, o ciertos tiempos,...etc 
+            console.log(evento)
+            if (evento.keyCode === 13) {
+                myFunction();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

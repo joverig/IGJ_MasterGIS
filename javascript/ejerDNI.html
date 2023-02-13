@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+<h3 id="puta">¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?¿Eres una puta?</h3>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+DNIletra = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+function myFunction() {
+  let person = prompt("Please enter your name", "");
+  if (person != null) {
+    let resto = person%23
+    if (person < 99999999 && person>0 && person.length == 8){
+    document.getElementById("demo").innerHTML =
+    "La letra del DNI "+ person +" es " + DNIletra[resto] ;
+    document.getElementById("puta").innerHTML = "Eres una puta"+ person.length  
+  }
+  else{
+    document.getElementById("demo").innerHTML =
+    "El dni no es correcto";
+  }
+}
+}
+</script>
+
+
+</body>
+</html>

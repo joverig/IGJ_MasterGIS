@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<h1>Ejer Factorial</h1>
+<h2>Cacula de su factorial </h2>
+
+
+<input type="Text" id="vehicle1" name="vehicle1" ">
+<label for="vehicle1"> Introduzca el factorial a calcular.</label><br>
+
+<br>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="myText2"></p>
+
+<script>
+function myFunction() {
+    let V2 = 1;
+    let V1 = document.getElementById("vehicle1").value;
+    if(V1 > 0 ){
+        for (let i = 1; i <= V1; i++) {
+            V2 = V2 * i
+            console.log(V2)
+        }
+        document.getElementById("myText2").innerHTML = "El factorial de  "+V1+" es " +V2;
+    }
+    else{
+        document.getElementById("myText2").innerHTML = "El factorial de  "+V1+" no se puede calcular";
+    }
+    
+    
+}
+</script>
+
+</body>
+</html>

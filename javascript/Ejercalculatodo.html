@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSPRUEBA\css\animate.css">
+    <link rel="stylesheet" href="CSSPRUEBA\css\flex-slider.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="stylesheet" href="C:\Master GIS\Módulo 5\GITHUB\IGJ_MasterGIS\css\bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    
+</head>
+
+<body>
+
+
+    <h1>Ejer Calcula todo</h1>
+    <h2>Introduce numeros enteros separados por comas </h2>
+   
+
+    <input type="text" id="vehicle1" name="input">
+    <label for="vehicle1"> Introduce tu numero</label><br>
+
+
+    <br>
+    <button id="button1" class="fa-sharp fa-solid fa-calculator-simple" >Cargar ejemplo</button>
+    <button id="button2" class="fa-sharp fa-solid fa-calculator-simple">Calcular</button>
+    <button id="button3" class="fa-solid fa-rotate-right">Reiniciar</button>
+    <br>
+    <p id="myText1" class="parrafo"></p>
+    <br>
+    <p id="myText2" class="parrafo"></p>
+    <br>
+    <p id="myText3" class="parrafo"></p>
+    <br>
+    <p id="myText4" class="parrafo"></p>
+    
+
+    <script>
+        cadena = document.getElementById("vehicle1").value
+        arraynum = cadena.split(",")
+
+        document.getElementById("button2").addEventListener("click", myFunction2);
+        function myFunction2() {
+            cadena = document.getElementById("vehicle1").value
+            arraynum = cadena.split(",")
+
+            let suma = 0
+            let leng = 0
+            let valormax = 0
+            let valormin = 9999999999999999999999999999999999999999999999
+            for (h of arraynum) {
+                if (isNaN(h) !== true) {
+                    console.log(isNaN(h))
+                    suma = suma + parseInt(h);
+                    leng = leng + 1;
+                    if (parseInt(h) > valormax) {
+                        valormax = h;
+                    }
+                    if (parseInt(h) < valormin) {
+                        valormin = h;
+                    }
+
+
+                }
+                else {
+                    console.log("ERROR")
+                    document.getElementById("myText1").textContent = "Por favor introduzca solo numeros";
+                    document.getElementById("myText1").className= "fa-solid fa-triangle-exclamation fa-fade"
+                    return
+                }
+            }
+            document.getElementById("myText1").textContent = "La suma es " + suma;
+            document.getElementById("myText2").textContent = "La media de los numeros es " + (suma / leng);
+            document.getElementById("myText3").textContent = "El valor maximo es " + valormax;
+            document.getElementById("myText4").textContent = "El valor minimo es " + valormin;
+        }
+        document.getElementById("button1").addEventListener("click", myFunction1);
+        function myFunction1() {
+            document.getElementById("vehicle1").value = [23, 78, 34]
+
+        }
+
+        document.getElementById("button3").addEventListener("click", myFunction3);
+        function myFunction3() {
+            document.getElementById("vehicle1").value = []
+
+            for (bloque of document.getElementsByClassName("parrafo")) {
+            bloque.textContent = "";
+        }
+          
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

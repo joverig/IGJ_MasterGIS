@@ -1,0 +1,22 @@
+.pixel {
+  height: 40px;
+  width: 40px;
+  position:relative;
+  border: solid;
+  border-width: 0.0001cm;
+  background-color: rgb(18, 159, 3);
+}
+.fila{
+  display: flex;
+  flex-direction: row;
+}
+
+.pixel2 {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: solid;
+  border-width: 0.0001cm;
+  border-color: black;
+  background-color: rgb(216, 209, 230);
+}

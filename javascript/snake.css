@@ -3,20 +3,104 @@
   width: 40px;
   position:relative;
   border: solid;
+  border-radius: 5%;
   border-width: 0.0001cm;
-  background-color: rgb(18, 159, 3);
+  background-color: rgb(238, 237, 243);
+  background-image: url("pasto.jpg");
+  background-size: 55px;
+  background-position: center;
 }
 .fila{
+  margin-left:30%;
   display: flex;
   flex-direction: row;
 }
 
+.parrafo{
+  margin-left:30%;
+  
+
+}
+
+.gameover{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: solid;
+  border-width: 0.0001cm;
+  border-radius: 30%;
+  border-color: black;
+  background-color: rgb(62, 40, 252);
+  background-image: url("dead2.png");
+  background-size: 55px;
+  background-position: center;
+}
 .pixel2 {
   height: 40px;
   width: 40px;
   position: relative;
   border: solid;
   border-width: 0.0001cm;
+  border-radius: 30%;
   border-color: black;
-  background-color: rgb(216, 209, 230);
+  background-color: rgb(62, 40, 252);
+  background-image: url("vikingo.png");
+  background-size: 55px;
+  background-position: center;
+}
+
+.pixel3 {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: solid;
+  border-width: 0.0001cm;
+  border-radius: 50%;
+  border-color: black;
+  background-color: rgb(36, 242, 9);
+  background-image: url("cerveza2.jpg");
+  background-size: 55px;
+  background-position: center;
+}
+
+.pixel4 {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: solid;
+  border-width: 0.0001cm;
+  border-radius: 20%;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(7, 7, 7);
+  background-image: url("bomba.jpg");
+  background-size: 55px;
+  background-position: center;
+}
+
+.pixel5 {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: solid;
+  border-width: 0.01cm;
+  border-radius: 50%;
+  border-color: rgb(255, 196, 0);
+  background-color: rgb(255, 0, 0);
+  background-image: url("explosion.png");
+  background-size: 55px;
+  background-position: center;
+}
+
+.pixel6 {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: solid;
+  border-width: 0.01cm;
+  border-radius: 0%;
+  
+  background-color: rgb(255, 0, 0);
+  background-image: url("barricada.jpg");
+  background-size: 55px;
+  background-position: center;
 }

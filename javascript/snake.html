@@ -1,87 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
-<body>
+
+<body id="cuerpo">
     <div class="fila">
-        <div id="1,1" class="pixel"></div>
-        <div id="2,1" class="pixel"></div>
-        <div id="3,1" class="pixel"></div>
-        <div id="4,1" class="pixel"></div>
-        <div id="5,1" class="pixel"></div>
-          
-</div>
-<div class="fila">
-    <div id="1,2" class="pixel"></div>
-<div id="2,2" class="pixel"></div>
-<div id="3,2" class="pixel"></div>
-<div id="4,2" class="pixel"></div>
-<div id="5,2" class="pixel"></div>
+        <div id="1,1" class="pixel6"></div>
+        <div id="2,1" class="pixel6"></div>
+        <div id="3,1" class="pixel6"></div>
+        <div id="4,1" class="pixel6"></div>
+        <div id="5,1" class="pixel6"></div>
+        <div id="6,1" class="pixel6"></div>
+        <div id="7,1" class="pixel6"></div>
+        <div id="8,1" class="pixel6"></div>
+        <div id="9,1" class="pixel6"></div>
+        <div id="10,1" class="pixel6"></div>
 
-</div>
-<div class="fila">
-    <div id="1,3" class="pixel"></div>
-    <div id="2,3" class="pixel"></div>
-    <div id="3,3" class="pixel"></div>
-    <div id="4,3" class="pixel"></div>
-    <div id="5,3" class="pixel"></div>
-        
-</div>
-<div class="fila">
-    <div id="1,4" class="pixel"></div>
-<div id="2,4" class="pixel"></div>
-<div id="3,4" class="pixel"></div>
-<div id="4,4" class="pixel"></div>
-<div id="5,4" class="pixel"></div>
 
-</div>
-<div class="fila">
-    <div id="1,5" class="pixel"></div>
-<div id="2,5" class="pixel"></div>
-<div id="3,5" class="pixel"></div>
-<div id="4,5" class="pixel"></div>
-<div id="5,5" class="pixel2"></div>
+    </div>
+    <div class="fila">
+        <div id="1,2" class="pixel6"></div>
+        <div id="2,2" class="pixel"></div>
+        <div id="3,2" class="pixel"></div>
+        <div id="4,2" class="pixel"></div>
+        <div id="5,2" class="pixel"></div>
+        <div id="6,2" class="pixel"></div>
+        <div id="7,2" class="pixel"></div>
+        <div id="8,2" class="pixel"></div>
+        <div id="9,2" class="pixel"></div>
+        <div id="10,2" class="pixel6"></div>
 
-</div>
-<p id="demo">aqui</p>
+    </div>
+    <div class="fila">
+        <div id="1,3" class="pixel6"></div>
+        <div id="2,3" class="pixel"></div>
+        <div id="3,3" class="pixel"></div>
+        <div id="4,3" class="pixel"></div>
+        <div id="5,3" class="pixel"></div>
+        <div id="6,3" class="pixel"></div>
+        <div id="7,3" class="pixel"></div>
+        <div id="8,3" class="pixel"></div>
+        <div id="9,3" class="pixel"></div>
+        <div id="10,3" class="pixel6"></div>
+
+    </div>
+    <div class="fila">
+        <div id="1,4" class="pixel6"></div>
+        <div id="2,4" class="pixel"></div>
+        <div id="3,4" class="pixel"></div>
+        <div id="4,4" class="pixel"></div>
+        <div id="5,4" class="pixel"></div>
+        <div id="6,4" class="pixel"></div>
+        <div id="7,4" class="pixel"></div>
+        <div id="8,4" class="pixel"></div>
+        <div id="9,4" class="pixel"></div>
+        <div id="10,4" class="pixel6"></div>
+
+    </div>
+    <div class="fila">
+        <div id="1,5" class="pixel6"></div>
+        <div id="2,5" class="pixel"></div>
+        <div id="3,5" class="pixel"></div>
+        <div id="4,5" class="pixel"></div>
+        <div id="5,5" class="pixel"></div>
+        <div id="6,5" class="pixel"></div>
+        <div id="7,5" class="pixel"></div>
+        <div id="8,5" class="pixel"></div>
+        <div id="9,5" class="pixel"></div>
+        <div id="10,5" class="pixel6"></div>
+
+    </div>
+    <div class="fila">
+        <div id="1,6" class="pixel6"></div>
+        <div id="2,6" class="pixel"></div>
+        <div id="3,6" class="pixel"></div>
+        <div id="4,6" class="pixel"></div>
+        <div id="5,6" class="pixel"></div>
+        <div id="6,6" class="pixel"></div>
+        <div id="7,6" class="pixel"></div>
+        <div id="8,6" class="pixel"></div>
+        <div id="9,6" class="pixel"></div>
+        <div id="10,6" class="pixel6"></div>
+
+    </div>
+    <div class="fila">
+        <div id="1,7" class="pixel6"></div>
+        <div id="2,7" class="pixel"></div>
+        <div id="3,7" class="pixel"></div>
+        <div id="4,7" class="pixel"></div>
+        <div id="5,7" class="pixel"></div>
+        <div id="6,7" class="pixel"></div>
+        <div id="7,7" class="pixel"></div>
+        <div id="8,7" class="pixel"></div>
+        <div id="9,7" class="pixel"></div>
+        <div id="10,7" class="pixel6"></div>
+
+
+    </div>
+
+    <div class="fila">
+        <div id="1,8" class="pixel6"></div>
+        <div id="2,8" class="pixel"></div>
+        <div id="3,8" class="pixel"></div>
+        <div id="4,8" class="pixel"></div>
+        <div id="5,8" class="pixel"></div>
+        <div id="6,8" class="pixel"></div>
+        <div id="7,8" class="pixel"></div>
+        <div id="8,8" class="pixel"></div>
+        <div id="9,8" class="pixel"></div>
+        <div id="10,8" class="pixel6"></div>
+
+
+    </div>
+    <div class="fila">
+        <div id="1,9" class="pixel6"></div>
+        <div id="2,9" class="pixel"></div>
+        <div id="3,9" class="pixel"></div>
+        <div id="4,9" class="pixel"></div>
+        <div id="5,9" class="pixel"></div>
+        <div id="6,9" class="pixel"></div>
+        <div id="7,9" class="pixel"></div>
+        <div id="8,9" class="pixel"></div>
+        <div id="9,9" class="pixel"></div>
+        <div id="10,9" class="pixel6"></div>
+
+
+    </div>
+    <div class="fila">
+        <div id="1,10" class="pixel6"></div>
+        <div id="2,10" class="pixel6"></div>
+        <div id="3,10" class="pixel6"></div>
+        <div id="4,10" class="pixel6"></div>
+        <div id="5,10" class="pixel6"></div>
+        <div id="6,10" class="pixel6"></div>
+        <div id="7,10" class="pixel6"></div>
+        <div id="8,10" class="pixel6"></div>
+        <div id="9,10" class="pixel6"></div>
+        <div id="10,10" class="pixel6"></div>
+
+
+    </div>
+
+    <I  class="fa-solid fa-money-check-dollar fa-flip" style="margin-left: 30%;"></I><i id="myText2" class ="fa-light fa-face-eyes-xmarks"></i>
+    <br>
+    <p id="myText1" class="parrafo" style="margin-left: 30%;"></p>
+    <br>
+    <input type="button" value="Reiniciar" class ="fa-light fa-face-eyes-xmarks" style="margin-left: 30%;" onclick="location.reload()"/>
+    <!-- class ="fa-light fa-face-eyes-xmarks" style="margin-left: 30%;">Reiniciar</button>-->
+
+
+
 
 </body>
 <script>
 
 
-function getTime () {
-  return Math.floor(Date.now() / 1000)
-}
-console.log(getTime())
-console.log(getTime()+5)
+    document.addEventListener("keyup", movimiento);
+    //console.log(document.addEventListener('keyup', movimiento))
+    function movimiento(evento) {
+        // evento es la forma de referenciar al objeto que se crea al presionar una tecla, podemos acceder a sus propiedades y condicionar solamente a ciertas letras, o ciertos tiempos,...etc 
+        //console.log(evento)
 
 
+        if (evento.keyCode === 40) {
+            moverabajo();
 
-    idx=1
-    idy="1"
-for (let i = 1; i < 6; i++){
-    idy = i 
-    idxy = idx.concat(",",idy)
-    timeloop1 = getTime()+5
-    timeloop2 = getTime()
-    console.log(idxy)
-  
-            cambiarcolor()
-          
-    
+        }
+        if (evento.keyCode === 38) {
+            moverarriba();
+
+        }
+        if (evento.keyCode === 39) {
+            moverderecha();
+
+        }
+        if (evento.keyCode === 37) {
+            moverizquierda();
+
+        }
+        gb += 1
+
+
     }
-   
 
-function cambiarcolor(){
-    
-      console.log("hola")
-    document.getElementById(idxy).classList = "pixel2"
+
+    //
+    gb = 1
+GO = 0
+    v2 = 0
+    idx = 3
+    idy = 3
+    cambiarcolormov()
+    generarpunto(9, 9)
+    generarbomba(8, 2, 8, 2)
+    document.getElementById("myText2").innerHTML = "SCORE: " + v2;
+
+
+
+    function getIDXY(x, y) {
+        x = x.toString()
+        xy = x.concat(",", y)
+        return xy
+
+    }
+
+    function cambiarcolormov() {
+        idxy = getIDXY(idx, idy);
+        document.getElementById(idxy).classList = "pixel2"
+        console.log(idxy)
+    }
+    function cambiarcolorgameover() {
+        idxy = getIDXY(idx, idy);
+        document.getElementById(idxy).classList = "gameover"
+        console.log(idxy)
+    }
+
+
+    function cambiarcolorrest() {
+        idxy = getIDXY(idx, idy);
+        document.getElementById(idxy).classList = "pixel"
+    }
+    function cambiarcolorpunt() {
+
+        document.getElementById(idpuntoxy).classList = "pixel3"
+    }
+    function cambiarcolorbomb() {
+        document.getElementById(idbombaxy).classList = "pixel4"
+
+    }
+    function cambiarcolorbomb2() {
+        document.getElementById(idbombaxy).classList = "pixel5"
+        document.getElementById(idbombaxy1).classList = "pixel5"
+        document.getElementById(idbombaxy2).classList = "pixel5"
+        document.getElementById(idbombaxy3).classList = "pixel5"
+        document.getElementById(idbombaxy4).classList = "pixel5"
+    }
+    function cambiarcolorbomb3() {
+        document.getElementById(idbombaxy).classList = "pixel"
+        document.getElementById(idbombaxy1).classList = "pixel"
+        document.getElementById(idbombaxy2).classList = "pixel"
+        document.getElementById(idbombaxy3).classList = "pixel"
+        document.getElementById(idbombaxy4).classList = "pixel"
+    }
+
+
+
+    function moverarriba() {
+        if (gb % 2 == 0) {
+            cambiarcolorbomb3()
+        }
+        if (idy - 1 < 2) {
+            Gameover()
+        }
+        else {
+            cambiarcolorrest()
+            idy -= 1
+            cambiarcolormov()
+        }
+        if (gb % 2 == 0) {
+            generarbomba(8, 2, 8, 2)
+        }
+        if (gb % 2 != 0 && (idxy == idbombaxy || idxy == idbombaxy1 || idxy == idbombaxy2 || idxy == idbombaxy3 || idxy == idbombaxy4)) {
+            Gameover()
+        }
+        if (gb % 2 != 0) {
+            cambiarcolorbomb2()
+        }
+        comerpunto()
+        regenerarpunto()
+        if(GO==1){
+            Gameover()
+        }
+    }
+    function moverabajo() {
+        if (gb % 2 == 0) {
+            cambiarcolorbomb3()
+        }
+        if (idy + 1 > 9) {
+            Gameover()
+        }
+        else {
+            cambiarcolorrest()
+            idy += 1
+            cambiarcolormov()
+        }
+        if (gb % 2 == 0) {
+            generarbomba(8, 2, 8, 2)
+        }
+        if (gb % 2 != 0 && (idxy == idbombaxy || idxy == idbombaxy1 || idxy == idbombaxy2 || idxy == idbombaxy3 || idxy == idbombaxy4)) {
+            Gameover()
+        }
+        if (gb % 2 != 0) {
+            cambiarcolorbomb2()
+        }
+        comerpunto()
+        regenerarpunto()
+        
+        if(GO==1){
+            Gameover()
+        }
+    }
+    function moverizquierda() {
+        if (gb % 2 == 0) {
+            cambiarcolorbomb3()
+        }
+
+        if (idx - 1 < 2) {
+            Gameover()
+        }
+        else {
+            cambiarcolorrest()
+            idx -= 1
+            cambiarcolormov()
+        }
+        if (gb % 2 == 0) {
+            generarbomba(8, 2, 8, 2)
+        }
+        if (gb % 2 != 0 && (idxy == idbombaxy || idxy == idbombaxy1 || idxy == idbombaxy2 || idxy == idbombaxy3 || idxy == idbombaxy4)) {
+            Gameover()
+        }
+        if (gb % 2 != 0) {
+            cambiarcolorbomb2()
+        }
+        comerpunto()
+        regenerarpunto()
+        
+        if(GO==1){
+            Gameover()
+        }
+    }
+    function moverderecha() {
+        if (gb % 2 == 0) {
+            cambiarcolorbomb3()
+        }
+        if (idx + 1 > 9) {
+            Gameover()
+        }
+        else {
+            cambiarcolorrest()
+            idx += 1
+            cambiarcolormov()
+        }
+        if (gb % 2 == 0) {
+            generarbomba(8, 2, 8, 2)
+        }
+        if (gb % 2 != 0 && (idxy == idbombaxy || idxy == idbombaxy1 || idxy == idbombaxy2 || idxy == idbombaxy3 || idxy == idbombaxy4)) {
+            Gameover()
+        }
+        if (gb % 2 != 0) {
+            cambiarcolorbomb2()
+        }
+        comerpunto()
+        regenerarpunto()
+        
+        if(GO==1){
+            Gameover()
+        }
+    }
+
+
+
+    function generarpunto(limx, limy) {
+        idpuntox = Math.ceil(Math.random() * (limx-1)+1);
+        idpuntoy = Math.ceil(Math.random() * (limy-1)+1);
+        idpuntoxy = getIDXY(idpuntox, idpuntoy);
+
+        while (idpuntoxy == idxy) {
+            idpuntox = Math.ceil(Math.random() * (limx-1)+1);
+            idpuntoy = Math.ceil(Math.random() * (limy-1)+1);
+            idpuntoxy = getIDXY(idpuntox, idpuntoy);
+            console.log("colision " + idpuntoxy)
+        }
+        cambiarcolorpunt()
+
+    }
+    function regenerarpunto() {
+        if (gb % 2 != 0 && (idpuntoxy == idbombaxy || idpuntoxy == idbombaxy1 || idpuntoxy == idbombaxy2 || idpuntoxy == idbombaxy3 || idpuntoxy == idbombaxy4)) {
+            generarpunto(9, 9)
+        }
+    }
+
+    function comerpunto() {
+        if (idpuntoxy == idxy) {
+            v2 += 1
+            document.getElementById("myText2").innerHTML = "SCORE: " + v2;
+            generarpunto(9, 9)
+
+        }
+    }
+    function generarbomba(limxsup, limxinf, limysup, limyinf) {
+        idbombax = Math.ceil(Math.random() * (limxsup - limxinf) + limxinf);
+        idbombay = Math.ceil(Math.random() * (limysup - limyinf) + limyinf);
+        idbombaxy = getIDXY(idbombax, idbombay);
+
+        while (idbombaxy == idpuntoxy || idbombaxy == idxy) {
+            idbombax = Math.ceil(Math.random() * (limxsup - limxinf) + limxinf);
+            idbombay = Math.ceil(Math.random() * (limysup - limyinf) + limyinf);
+            idbombaxy = getIDXY(idbombax, idbombay);
+        }
+        cambiarcolorbomb()
+        idbombax1 = idbombax - 1
+        idbombax2 = idbombax - 0
+        idbombax3 = idbombax + 0
+        idbombax4 = idbombax + 1
+        idbombay1 = idbombay - 0
+        idbombay2 = idbombay + 1
+        idbombay3 = idbombay - 1
+        idbombay4 = idbombay + 0
+        idbombaxy1 = getIDXY(idbombax1, idbombay1);
+        idbombaxy2 = getIDXY(idbombax2, idbombay2);
+        idbombaxy3 = getIDXY(idbombax3, idbombay3);
+        idbombaxy4 = getIDXY(idbombax4, idbombay4);
+    }
+
+
+    function Gameover() {
+        console.log("ERROR")
+        document.getElementById("myText1").textContent = "GAME OVER";
+        document.getElementById("myText1").className = "fa-solid fa-triangle-exclamation fa-fade";
+        removeHandler()
+        cambiarcolorgameover()
+        GO= 1 
+    }
+
+    function removeHandler() {
+        console.log("removeeventer")
+        document.removeEventListener("keyup", movimiento);
+    }
+function reiniciar(){
+    location.reload();
 }
-
 </script>
+
 </html>

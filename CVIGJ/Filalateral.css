@@ -8,7 +8,7 @@ body {
     position: fixed;
      top: 0;
     left: 0;
-    background-color: rgb(79, 32, 150);
+    background-color: rgb(103, 41, 179);
     overflow-x:hidden;
     transition: 1s;
     padding-top: 60px;
@@ -46,15 +46,36 @@ body {
     .sidenav a {font-size: 18px;}
   }
   .titulo{
+
     font-weight: 400;
-    color: bisque;
+    color: black;
+    border: solid;
+  border-width: 0.08cm;
+  border-radius: 0%;
+  border-color: aliceblue;
+  width: 30%;
+  background-color:rgb(164, 202, 164);
   }
   .fecha{
+    width: 30%;
+    border: solid;
+    border-width: 0.08cm;
+    border-radius: 0%;
+    border-color: aliceblue;
+
     font-style: oblique;
-    color: bisque;
+    color: black;
+    background-color: rgb(164, 202, 164);
   }
   .texto{
-    color: bisque;
+    border: solid;
+    border-width: 0.08cm;
+    border-radius: 0%;
+    border-color: aliceblue;
+
+    width: 30%;
+    color: black;
+    background-color: rgb(164, 202, 164);
   }
 
 

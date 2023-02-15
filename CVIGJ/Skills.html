@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Ejer Usuarios premmium</h1>
+    <h2>Saluda a los usuarios y reconoce quien es premium</h2>
+
+
+
+    <br>
+    <button id="button">Try it</button>
+
+
+
+
+    <script>
+    qwer=0
+
+        function init(h) {
+
+            let p = document.createElement("p");
+            let pTexto = document.createTextNode(h);
+            p.appendChild(pTexto);
+
+            document.body.appendChild(p);
+
+        }
+
+        document.getElementById("button").addEventListener("click", unoauno);
+
+
+function unoauno(){
+    init(ArrayUsers[qwer])
+    document.getElementById("button").textContent= ArrayUsers[qwer]
+    qwer += 1
+}
+
+
+        ArrayUsers = ["hola",2,3,4,5]
+
+
+     //  for (element of ArrayUsers){
+       // init("p",element.username)
+     //  }
+
+        
+
+    </script>
+
+</body>
+
+</html>

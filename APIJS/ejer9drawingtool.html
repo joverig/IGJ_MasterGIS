@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>mi primer mapa</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.42/esri/css/esri.css">
+    <script src="https://js.arcgis.com/3.42/"></script>
+    <script src="ejer9.js"></script>
+    <style>
+        html,
+        body,
+        #divMap {
+            height: 100%;
+            width: 100%;
+            margin: 10;
+            padding: 10;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -10;
+        }
+
+        #div {
+            margin: 1px;
+            padding: 4px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            bottom: 10%;
+            z-index: -1;
+            background-color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="divMap"></div>
+    <button id="toolbar">TOOLBAR</button>
+
+    <DIV id="div">
+        <ul id = "list">
+
+
+        </ul>
+
+    </DIV>
+</body>
+
+</html>

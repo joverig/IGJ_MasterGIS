@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>GP Viewshed Task</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/3.43/esri/css/esri.css">
+    <style>
+      html, body, #mapDiv {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      #info {
+        bottom: 20px;
+        color: #444;
+        height: auto;
+        font-family: arial;
+        left: 20px;
+        margin: 5px;
+        padding: 10px;
+        position: absolute;
+        text-align: left;
+        width: 200px;
+        z-index: 40;
+      }
+    </style>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.43/dijit/themes/nihilo/nihilo.css">
+    <script src="https://js.arcgis.com/3.43compact/"></script>
+<SCRIpt src="ejer14.js"></SCRIpt>
+
+  </head>
+  <body>
+    <div id="mapDiv"></div>
+    <div id="info" class="esriSimpleSlider">
+      Click on map to execute ViewShed GP Task.
+    </div>
+  </body>
+</html>

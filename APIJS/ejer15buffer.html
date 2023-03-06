@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ejer BUFFER</title>
+
+    <!-- Configure dojo for asynchronous module loading -->
+    <script>
+        var dojoConfig = {
+            async: true
+        };
+    </script>
+
+    <!-- Reference libraries. The first CSS is a Dojo theme that gives dijits a consistent style. -->
+    <link rel="stylesheet" href="http://js.arcgis.com/3.43/dijit/themes/nihilo/nihilo.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.43/esri/css/esri.css">
+    <!-- <link rel="stylesheet" href="css/viewshedanalysis.css"/> -->
+    <script src="http://js.arcgis.com/3.43/"></script>
+    <script src="ejer15.js"></script>
+    <style>
+        html, body, #divMap {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+        }
+        </style>
+</head>
+
+<body class="nihilo">
+<div id="divMap"></div>
+</body>
+</html>
